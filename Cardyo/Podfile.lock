@@ -1,0 +1,77 @@
+PODS:
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Alamofire (3.1.2)
+  - APIModel (0.10.0):
+    - Alamofire (~> 3.0)
+    - RealmSwift (~> 0.96.1)
+    - SwiftyJSON (~> 2.3.0)
+  - Cartography (0.6.0)
+  - KeyboardWrapper (1.0.2)
+  - performSelector-swift (0.1.0)
+  - ReactiveUI (0.0.2)
+  - Realm (0.96.2):
+    - Realm/Headers (= 0.96.2)
+  - Realm/Headers (0.96.2)
+  - RealmSwift (0.96.2):
+    - Realm (= 0.96.2)
+  - SwiftyJSON (2.3.1)
+  - UIColor+FlatColors (0.0.2)
+  - ZLSwipeableViewSwift (0.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - Alamofire (~> 3.0)
+  - APIModel (~> 0.10.0)
+  - Cartography
+  - KeyboardWrapper
+  - performSelector-swift
+  - ReactiveUI
+  - RealmSwift
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - UIColor+FlatColors
+  - ZLSwipeableViewSwift
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: ece271ab33839d11c2153d71fb59c53545132cf9
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  APIModel: 9d75977d6a107a6c6a2d9603b51a2e163f7d5485
+  Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
+  KeyboardWrapper: 573fab5cb8cf9a0ba6f350d12b8c8e4c5ced8196
+  performSelector-swift: 676d3dab420ed7e1505a7cdaf35e5741509cdd3c
+  ReactiveUI: 597b21e143dfc5fe438afc1b7a73c5c7e256175b
+  Realm: 3ce8448151c571e90b85002d984d7f93f54fc8a3
+  RealmSwift: 485599fe54e35461c4a0daa7d01d8fbf11424873
+  SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
+  UIColor+FlatColors: 6c699df7a575281794c688c64cee6c44fd1f93b4
+  ZLSwipeableViewSwift: 3bd1ea9cdc4df9d0f024be32a00d3cfc66f57780
+
+COCOAPODS: 0.39.0

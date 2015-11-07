@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uxh-uN-hr1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swipeable View Controller-->
+        <scene sceneID="air-Me-w6t">
+            <objects>
+                <viewController id="lbR-LJ-COe" customClass="ZLSwipeableViewController" customModule="Cardyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wE6-00-J9a"/>
+                        <viewControllerLayoutGuide type="bottom" id="EYU-42-Arp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qg1-QS-222" customClass="ZLSwipeableView" customModule="ZLSwipeableViewSwift">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HTd-Mz-28m"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q7F-Xo-LCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="957"/>
+        </scene>
+        <!--Cardyo Tab Bar Controller-->
+        <scene sceneID="0Mi-iC-Y6X">
+            <objects>
+                <tabBarController id="uxh-uN-hr1" customClass="CardyoTabBarController" customModule="Cardyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="sxB-aS-doD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.15294117647058825" green="0.2196078431372549" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gmL-p0-Ehp" kind="relationship" relationship="viewControllers" id="jKf-Xp-HVI"/>
+                        <segue destination="uDB-zR-SN9" kind="relationship" relationship="viewControllers" id="aET-s9-JSM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CfJ-VA-tu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="-1019"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Hz-DH-pLm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gmL-p0-Ehp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="fc7-zM-r5d"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wDJ-WA-HAY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lbR-LJ-COe" kind="relationship" relationship="rootViewController" id="sip-Mc-w0b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLw-Or-Acy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2117" y="21"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="JXT-fy-5BR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uDB-zR-SN9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="XPR-PP-Gia"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1pn-oq-MbE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.1529411765" green="0.21960784310000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lrn-yA-HCQ" kind="relationship" relationship="rootViewController" id="oOJ-NM-Rta"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9q-Hh-Ceu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="21"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="b4Z-IY-9SJ">
+            <objects>
+                <viewController storyboardIdentifier="AvatarVC" id="Lrn-yA-HCQ" customClass="AvatarViewController" customModule="Cardyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HSJ-wb-Gxr"/>
+                        <viewControllerLayoutGuide type="bottom" id="XqY-Mp-1id"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8tQ-n6-69x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfile" translatesAutoresizingMaskIntoConstraints="NO" id="LEK-ES-MUs">
+                                <rect key="frame" x="50" y="94" width="275" height="278"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="GFd-JT-X1V"/>
+                                    <constraint firstAttribute="height" constant="278" id="HkA-7u-j2f"/>
+                                    <constraint firstAttribute="width" constant="150" id="h6b-0T-oGh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="h6b-0T-oGh"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dyK-sX-P5x">
+                                <rect key="frame" x="50" y="448" width="275" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hey, good looking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="e4G-bq-a2K">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bkc-iM-fUj">
+                                        <rect key="frame" x="0.0" y="42" width="275" height="108"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edb-S2-9Zu" customClass="CardyoButton" customModule="Cardyo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="51.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Set">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setPhotoButtonPressed:" destination="Lrn-yA-HCQ" eventType="touchUpInside" id="xFc-dJ-OUd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze8-9h-lGl" customClass="CardyoButton" customModule="Cardyo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="56.5" width="275" height="51.5"/>
+                                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="0.6357421875" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Log out">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="logoutButtonPressed:" destination="Lrn-yA-HCQ" eventType="touchUpInside" id="tUZ-LA-bVi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Jlr-1f-82I"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.21960784310000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LEK-ES-MUs" firstAttribute="leading" secondItem="8tQ-n6-69x" secondAttribute="leading" constant="50" id="LsG-ev-nFn"/>
+                            <constraint firstAttribute="trailing" secondItem="LEK-ES-MUs" secondAttribute="trailing" constant="50" id="STk-cC-mrB"/>
+                            <constraint firstItem="XqY-Mp-1id" firstAttribute="top" secondItem="dyK-sX-P5x" secondAttribute="bottom" constant="20" id="arp-qs-rSd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dyK-sX-P5x" secondAttribute="trailing" constant="50" id="kx3-fE-qId"/>
+                            <constraint firstItem="dyK-sX-P5x" firstAttribute="leading" secondItem="8tQ-n6-69x" secondAttribute="leading" constant="50" id="n44-CW-Qhh"/>
+                            <constraint firstItem="LEK-ES-MUs" firstAttribute="top" secondItem="HSJ-wb-Gxr" secondAttribute="bottom" constant="30" id="p7Q-bb-Jpc"/>
+                            <constraint firstAttribute="trailing" secondItem="dyK-sX-P5x" secondAttribute="trailing" constant="50" id="zcp-me-99f"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kx3-fE-qId"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="X4P-Ws-yvQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="LEK-ES-MUs" id="gAM-OH-BF6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVF-0E-FYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234.5" y="843.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultProfile" width="600" height="600"/>
+    </resources>
+</document>

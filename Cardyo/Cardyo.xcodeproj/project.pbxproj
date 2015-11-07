@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB6EF146906F3F58D02DF4C3 /* Pods_Cardyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8BC9B80A5947FCBAA8C92C /* Pods_Cardyo.framework */; };
+		E6684CB11BEA9C7A008CA808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6684CB01BEA9C7A008CA808 /* AppDelegate.swift */; };
+		E6684CB31BEA9C7A008CA808 /* ZLSwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6684CB21BEA9C7A008CA808 /* ZLSwipeableViewController.swift */; };
+		E6684CB81BEA9C7A008CA808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6684CB61BEA9C7A008CA808 /* Main.storyboard */; };
+		E6684CBA1BEA9C7A008CA808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6684CB91BEA9C7A008CA808 /* Assets.xcassets */; };
+		E6684CBD1BEA9C7A008CA808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6684CBB1BEA9C7A008CA808 /* LaunchScreen.storyboard */; };
+		E6684CC81BEA9C7A008CA808 /* CardyoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6684CC71BEA9C7A008CA808 /* CardyoTests.swift */; };
+		E6684CD31BEA9C7A008CA808 /* CardyoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6684CD21BEA9C7A008CA808 /* CardyoUITests.swift */; };
+		E6694CCE1BEB9ADE0032D8D4 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6694CCD1BEB9ADE0032D8D4 /* OnboardingViewController.swift */; };
+		E6694CD01BEB9ECC0032D8D4 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6694CCF1BEB9ECC0032D8D4 /* User.storyboard */; };
+		E6694CD51BEB9ED60032D8D4 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6694CD11BEB9ED60032D8D4 /* ChoiceViewController.swift */; };
+		E6694CD61BEB9ED60032D8D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6694CD21BEB9ED60032D8D4 /* LoginViewController.swift */; };
+		E6694CD71BEB9ED60032D8D4 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6694CD31BEB9ED60032D8D4 /* AvatarViewController.swift */; };
+		E6694CD81BEB9ED60032D8D4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6694CD41BEB9ED60032D8D4 /* RegisterViewController.swift */; };
+		E6CEB5811BECFD8A00E87FFC /* CardyoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5801BECFD8A00E87FFC /* CardyoTabBarController.swift */; };
+		E6CEB5831BED005400E87FFC /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5821BED005400E87FFC /* AppTheme.swift */; };
+		E6CEB5851BED1D7200E87FFC /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5841BED1D7200E87FFC /* NetworkOperation.swift */; };
+		E6CEB5881BED48C800E87FFC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5871BED48C800E87FFC /* Card.swift */; };
+		E6CEB58A1BED48D000E87FFC /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5891BED48D000E87FFC /* Deck.swift */; };
+		E6CEB58C1BED4AA200E87FFC /* Guesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB58B1BED4AA200E87FFC /* Guesses.swift */; };
+		E6CEB58E1BED5CC700E87FFC /* CardyoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB58D1BED5CC700E87FFC /* CardyoButton.swift */; };
+		E6D6BCE21BEBACA90002862D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6BCE11BEBACA90002862D /* CardView.swift */; };
+		E6D6BCE51BEBAE600002862D /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6D6BCE41BEBAE600002862D /* Cards.storyboard */; };
+		E6D6BCEC1BEBC05A0002862D /* CardyoStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D6BCEB1BEBC05A0002862D /* CardyoStackView.xib */; };
+		E6D6BCEE1BEBD6190002862D /* RailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6BCED1BEBD6190002862D /* RailsRequest.swift */; };
+		E6D6BCF01BEBEF5A0002862D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6BCEF1BEBEF5A0002862D /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6684CC41BEA9C7A008CA808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6684CA51BEA9C7A008CA808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6684CAC1BEA9C7A008CA808;
+			remoteInfo = Cardyo;
+		};
+		E6684CCF1BEA9C7A008CA808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6684CA51BEA9C7A008CA808 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6684CAC1BEA9C7A008CA808;
+			remoteInfo = Cardyo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FB6518E0B954A6FA3CCBFE6 /* Pods-Cardyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cardyo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cardyo/Pods-Cardyo.release.xcconfig"; sourceTree = "<group>"; };
+		3E627AB777963F984B341BD9 /* Pods-Cardyo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cardyo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cardyo/Pods-Cardyo.debug.xcconfig"; sourceTree = "<group>"; };
+		AE8BC9B80A5947FCBAA8C92C /* Pods_Cardyo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cardyo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6684CAD1BEA9C7A008CA808 /* Cardyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cardyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6684CB01BEA9C7A008CA808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6684CB21BEA9C7A008CA808 /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
+		E6684CB71BEA9C7A008CA808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6684CB91BEA9C7A008CA808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6684CBC1BEA9C7A008CA808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6684CBE1BEA9C7A008CA808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6684CC31BEA9C7A008CA808 /* CardyoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardyoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6684CC71BEA9C7A008CA808 /* CardyoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardyoTests.swift; sourceTree = "<group>"; };
+		E6684CC91BEA9C7A008CA808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6684CCE1BEA9C7A008CA808 /* CardyoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardyoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6684CD21BEA9C7A008CA808 /* CardyoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardyoUITests.swift; sourceTree = "<group>"; };
+		E6684CD41BEA9C7A008CA808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6694CCD1BEB9ADE0032D8D4 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		E6694CCF1BEB9ECC0032D8D4 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		E6694CD11BEB9ED60032D8D4 /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		E6694CD21BEB9ED60032D8D4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E6694CD31BEB9ED60032D8D4 /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		E6694CD41BEB9ED60032D8D4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E6CEB5801BECFD8A00E87FFC /* CardyoTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardyoTabBarController.swift; sourceTree = "<group>"; };
+		E6CEB5821BED005400E87FFC /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		E6CEB5841BED1D7200E87FFC /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		E6CEB5871BED48C800E87FFC /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E6CEB5891BED48D000E87FFC /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		E6CEB58B1BED4AA200E87FFC /* Guesses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guesses.swift; sourceTree = "<group>"; };
+		E6CEB58D1BED5CC700E87FFC /* CardyoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardyoButton.swift; sourceTree = "<group>"; };
+		E6D6BCE11BEBACA90002862D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E6D6BCE41BEBAE600002862D /* Cards.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
+		E6D6BCEB1BEBC05A0002862D /* CardyoStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardyoStackView.xib; sourceTree = "<group>"; };
+		E6D6BCED1BEBD6190002862D /* RailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsRequest.swift; sourceTree = "<group>"; };
+		E6D6BCEF1BEBEF5A0002862D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6684CAA1BEA9C7A008CA808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6EF146906F3F58D02DF4C3 /* Pods_Cardyo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6684CC01BEA9C7A008CA808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6684CCB1BEA9C7A008CA808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3200D0D962A3355CDEB9A57F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE8BC9B80A5947FCBAA8C92C /* Pods_Cardyo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B223DAFD737CD06E715114E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E627AB777963F984B341BD9 /* Pods-Cardyo.debug.xcconfig */,
+				2FB6518E0B954A6FA3CCBFE6 /* Pods-Cardyo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6684CA41BEA9C7A008CA808 = {
+			isa = PBXGroup;
+			children = (
+				E6684CAF1BEA9C7A008CA808 /* Cardyo */,
+				E6684CC61BEA9C7A008CA808 /* CardyoTests */,
+				E6684CD11BEA9C7A008CA808 /* CardyoUITests */,
+				E6684CAE1BEA9C7A008CA808 /* Products */,
+				B223DAFD737CD06E715114E7 /* Pods */,
+				3200D0D962A3355CDEB9A57F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E6684CAE1BEA9C7A008CA808 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6684CAD1BEA9C7A008CA808 /* Cardyo.app */,
+				E6684CC31BEA9C7A008CA808 /* CardyoTests.xctest */,
+				E6684CCE1BEA9C7A008CA808 /* CardyoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6684CAF1BEA9C7A008CA808 /* Cardyo */ = {
+			isa = PBXGroup;
+			children = (
+				E6D6BCE71BEBAECB0002862D /* Main */,
+				E6684CE21BEAAE09008CA808 /* Login Flow */,
+				E6D6BCE81BEBAEDA0002862D /* Supporting Files */,
+			);
+			path = Cardyo;
+			sourceTree = "<group>";
+		};
+		E6684CC61BEA9C7A008CA808 /* CardyoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6684CC71BEA9C7A008CA808 /* CardyoTests.swift */,
+				E6684CC91BEA9C7A008CA808 /* Info.plist */,
+			);
+			path = CardyoTests;
+			sourceTree = "<group>";
+		};
+		E6684CD11BEA9C7A008CA808 /* CardyoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E6684CD21BEA9C7A008CA808 /* CardyoUITests.swift */,
+				E6684CD41BEA9C7A008CA808 /* Info.plist */,
+			);
+			path = CardyoUITests;
+			sourceTree = "<group>";
+		};
+		E6684CE21BEAAE09008CA808 /* Login Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E6694CCF1BEB9ECC0032D8D4 /* User.storyboard */,
+				E6694CD11BEB9ED60032D8D4 /* ChoiceViewController.swift */,
+				E6694CD21BEB9ED60032D8D4 /* LoginViewController.swift */,
+				E6694CD31BEB9ED60032D8D4 /* AvatarViewController.swift */,
+				E6694CD41BEB9ED60032D8D4 /* RegisterViewController.swift */,
+				E6694CCD1BEB9ADE0032D8D4 /* OnboardingViewController.swift */,
+			);
+			name = "Login Flow";
+			sourceTree = "<group>";
+		};
+		E6D6BCE61BEBAE890002862D /* Flash Card Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E6684CB21BEA9C7A008CA808 /* ZLSwipeableViewController.swift */,
+				E6D6BCE41BEBAE600002862D /* Cards.storyboard */,
+				E6D6BCEB1BEBC05A0002862D /* CardyoStackView.xib */,
+				E6D6BCE11BEBACA90002862D /* CardView.swift */,
+			);
+			name = "Flash Card Flow";
+			sourceTree = "<group>";
+		};
+		E6D6BCE71BEBAECB0002862D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E6D6BCED1BEBD6190002862D /* RailsRequest.swift */,
+				E6CEB5841BED1D7200E87FFC /* NetworkOperation.swift */,
+				E6CEB58B1BED4AA200E87FFC /* Guesses.swift */,
+				E6CEB5871BED48C800E87FFC /* Card.swift */,
+				E6CEB5891BED48D000E87FFC /* Deck.swift */,
+				E6CEB5801BECFD8A00E87FFC /* CardyoTabBarController.swift */,
+				E6684CB61BEA9C7A008CA808 /* Main.storyboard */,
+				E6D6BCE61BEBAE890002862D /* Flash Card Flow */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		E6D6BCE81BEBAEDA0002862D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6D6BCEF1BEBEF5A0002862D /* Extensions.swift */,
+				E6CEB5821BED005400E87FFC /* AppTheme.swift */,
+				E6684CB01BEA9C7A008CA808 /* AppDelegate.swift */,
+				E6684CB91BEA9C7A008CA808 /* Assets.xcassets */,
+				E6684CBB1BEA9C7A008CA808 /* LaunchScreen.storyboard */,
+				E6684CBE1BEA9C7A008CA808 /* Info.plist */,
+				E6CEB58D1BED5CC700E87FFC /* CardyoButton.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6684CAC1BEA9C7A008CA808 /* Cardyo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6684CD71BEA9C7A008CA808 /* Build configuration list for PBXNativeTarget "Cardyo" */;
+			buildPhases = (
+				0BB87AD44E54D125383C2E04 /* Check Pods Manifest.lock */,
+				E6684CA91BEA9C7A008CA808 /* Sources */,
+				E6684CAA1BEA9C7A008CA808 /* Frameworks */,
+				E6684CAB1BEA9C7A008CA808 /* Resources */,
+				371D38273B7B1DF539B87D50 /* Embed Pods Frameworks */,
+				C496B59F8BFA8BE11F3D1098 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cardyo;
+			productName = Cardyo;
+			productReference = E6684CAD1BEA9C7A008CA808 /* Cardyo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6684CC21BEA9C7A008CA808 /* CardyoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6684CDA1BEA9C7A008CA808 /* Build configuration list for PBXNativeTarget "CardyoTests" */;
+			buildPhases = (
+				E6684CBF1BEA9C7A008CA808 /* Sources */,
+				E6684CC01BEA9C7A008CA808 /* Frameworks */,
+				E6684CC11BEA9C7A008CA808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6684CC51BEA9C7A008CA808 /* PBXTargetDependency */,
+			);
+			name = CardyoTests;
+			productName = CardyoTests;
+			productReference = E6684CC31BEA9C7A008CA808 /* CardyoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6684CCD1BEA9C7A008CA808 /* CardyoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6684CDD1BEA9C7A008CA808 /* Build configuration list for PBXNativeTarget "CardyoUITests" */;
+			buildPhases = (
+				E6684CCA1BEA9C7A008CA808 /* Sources */,
+				E6684CCB1BEA9C7A008CA808 /* Frameworks */,
+				E6684CCC1BEA9C7A008CA808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6684CD01BEA9C7A008CA808 /* PBXTargetDependency */,
+			);
+			name = CardyoUITests;
+			productName = CardyoUITests;
+			productReference = E6684CCE1BEA9C7A008CA808 /* CardyoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6684CA51BEA9C7A008CA808 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TeamOne;
+				TargetAttributes = {
+					E6684CAC1BEA9C7A008CA808 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					E6684CC21BEA9C7A008CA808 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E6684CAC1BEA9C7A008CA808;
+					};
+					E6684CCD1BEA9C7A008CA808 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E6684CAC1BEA9C7A008CA808;
+					};
+				};
+			};
+			buildConfigurationList = E6684CA81BEA9C7A008CA808 /* Build configuration list for PBXProject "Cardyo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6684CA41BEA9C7A008CA808;
+			productRefGroup = E6684CAE1BEA9C7A008CA808 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6684CAC1BEA9C7A008CA808 /* Cardyo */,
+				E6684CC21BEA9C7A008CA808 /* CardyoTests */,
+				E6684CCD1BEA9C7A008CA808 /* CardyoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6684CAB1BEA9C7A008CA808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6694CD01BEB9ECC0032D8D4 /* User.storyboard in Resources */,
+				E6684CBD1BEA9C7A008CA808 /* LaunchScreen.storyboard in Resources */,
+				E6684CBA1BEA9C7A008CA808 /* Assets.xcassets in Resources */,
+				E6D6BCE51BEBAE600002862D /* Cards.storyboard in Resources */,
+				E6684CB81BEA9C7A008CA808 /* Main.storyboard in Resources */,
+				E6D6BCEC1BEBC05A0002862D /* CardyoStackView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6684CC11BEA9C7A008CA808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6684CCC1BEA9C7A008CA808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BB87AD44E54D125383C2E04 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		371D38273B7B1DF539B87D50 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cardyo/Pods-Cardyo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C496B59F8BFA8BE11F3D1098 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cardyo/Pods-Cardyo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6684CA91BEA9C7A008CA808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6694CD61BEB9ED60032D8D4 /* LoginViewController.swift in Sources */,
+				E6D6BCE21BEBACA90002862D /* CardView.swift in Sources */,
+				E6D6BCEE1BEBD6190002862D /* RailsRequest.swift in Sources */,
+				E6684CB11BEA9C7A008CA808 /* AppDelegate.swift in Sources */,
+				E6694CD81BEB9ED60032D8D4 /* RegisterViewController.swift in Sources */,
+				E6D6BCF01BEBEF5A0002862D /* Extensions.swift in Sources */,
+				E6CEB58E1BED5CC700E87FFC /* CardyoButton.swift in Sources */,
+				E6CEB5851BED1D7200E87FFC /* NetworkOperation.swift in Sources */,
+				E6CEB58C1BED4AA200E87FFC /* Guesses.swift in Sources */,
+				E6694CD51BEB9ED60032D8D4 /* ChoiceViewController.swift in Sources */,
+				E6CEB5811BECFD8A00E87FFC /* CardyoTabBarController.swift in Sources */,
+				E6CEB5881BED48C800E87FFC /* Card.swift in Sources */,
+				E6694CD71BEB9ED60032D8D4 /* AvatarViewController.swift in Sources */,
+				E6CEB5831BED005400E87FFC /* AppTheme.swift in Sources */,
+				E6CEB58A1BED48D000E87FFC /* Deck.swift in Sources */,
+				E6684CB31BEA9C7A008CA808 /* ZLSwipeableViewController.swift in Sources */,
+				E6694CCE1BEB9ADE0032D8D4 /* OnboardingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6684CBF1BEA9C7A008CA808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6684CC81BEA9C7A008CA808 /* CardyoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6684CCA1BEA9C7A008CA808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6684CD31BEA9C7A008CA808 /* CardyoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6684CC51BEA9C7A008CA808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6684CAC1BEA9C7A008CA808 /* Cardyo */;
+			targetProxy = E6684CC41BEA9C7A008CA808 /* PBXContainerItemProxy */;
+		};
+		E6684CD01BEA9C7A008CA808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6684CAC1BEA9C7A008CA808 /* Cardyo */;
+			targetProxy = E6684CCF1BEA9C7A008CA808 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6684CB61BEA9C7A008CA808 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6684CB71BEA9C7A008CA808 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6684CBB1BEA9C7A008CA808 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6684CBC1BEA9C7A008CA808 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6684CD51BEA9C7A008CA808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6684CD61BEA9C7A008CA808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6684CD81BEA9C7A008CA808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E627AB777963F984B341BD9 /* Pods-Cardyo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cardyo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.Cardyo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E6684CD91BEA9C7A008CA808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB6518E0B954A6FA3CCBFE6 /* Pods-Cardyo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cardyo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.Cardyo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E6684CDB1BEA9C7A008CA808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CardyoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.CardyoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cardyo.app/Cardyo";
+			};
+			name = Debug;
+		};
+		E6684CDC1BEA9C7A008CA808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CardyoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.CardyoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cardyo.app/Cardyo";
+			};
+			name = Release;
+		};
+		E6684CDE1BEA9C7A008CA808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CardyoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.CardyoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cardyo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E6684CDF1BEA9C7A008CA808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CardyoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.CardyoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cardyo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6684CA81BEA9C7A008CA808 /* Build configuration list for PBXProject "Cardyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6684CD51BEA9C7A008CA808 /* Debug */,
+				E6684CD61BEA9C7A008CA808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6684CD71BEA9C7A008CA808 /* Build configuration list for PBXNativeTarget "Cardyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6684CD81BEA9C7A008CA808 /* Debug */,
+				E6684CD91BEA9C7A008CA808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6684CDA1BEA9C7A008CA808 /* Build configuration list for PBXNativeTarget "CardyoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6684CDB1BEA9C7A008CA808 /* Debug */,
+				E6684CDC1BEA9C7A008CA808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6684CDD1BEA9C7A008CA808 /* Build configuration list for PBXNativeTarget "CardyoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6684CDE1BEA9C7A008CA808 /* Debug */,
+				E6684CDF1BEA9C7A008CA808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6684CA51BEA9C7A008CA808 /* Project object */;
+}

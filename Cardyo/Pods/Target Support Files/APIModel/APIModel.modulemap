@@ -1,0 +1,6 @@
+framework module ApiModel {
+  umbrella header "APIModel-umbrella.h"
+
+  export *
+  module * { export * }
+}
