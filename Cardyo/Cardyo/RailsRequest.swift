@@ -53,35 +53,36 @@ class RailsRequest: NSObject {
             "Access-Token" : token
            
             ]
-        }
+        
         
         Alamofire.request(.POST, info.url, parameters: info.parameters, encoding: .JSON, headers: info.headers).responseJSON(options: .MutableContainers) { (response) -> Void in
             
             guard response.result.error == nil else {
                 print(response.result.error!)
                 
-//                completion(json: nil, error: .BadData)
+                completion(json: nil, error: .BadData)
                 
                 return
             }
             
-            if let value: AnyObject = response.result.value {
+            if let value = response.result.value {
+            let json = JSON(value)
                 
-                
-//                completion(json: value, error: nil)
-                
-                // handle the results as JSON, without a bunch of nested if loops
-                let user = JSON(value)
-                // now we have the results, let's just print them though a tableview would definitely be better UI:
-                print("User " + user.description)
-                
-                if let key = user["key"].string {
-                    self.token = key
-                    print(self.token)
-                }
-                
+                print(json)
+                completion(json: json, error: nil)
+            
+//                // handle the results as JSON, without a bunch of nested if loops
+//                let user = JSON(value)
+//                // now we have the results, let's just print them though a tableview would definitely be better UI:
+//                print("User " + user.description)
+//                
+//                if let key = user["key"].string {
+//                    self.token = key
+//                    print(self.token)
+//                }
+            
               
-            }
+        }
  
         }
     }
@@ -102,54 +103,54 @@ class RailsRequest: NSObject {
 //        }
 //    }
     
-    
-    func register(withUserName username: String, andPassword password: String, andEmail email: String, completion: () -> () ) {
-        var info = RequestInfo()
-        info.endPoint = "/signup"
-        info.methodType = .POST
-        
-        info.parameters = [
-            "username": username,
-            "password" : password,
-            "email": email
-        
-        ]
-        
-       
-        
-        requestWithInfo(info) { (returnedInfo) -> () in
-            print(returnedInfo)
-            
-            if let user = returnedInfo?["user"] as? [String: AnyObject] {
-                
-                if let key = user["access_token"] as? String {
-                    
-                    self.token = key
-                    print(self.token)
-                    completion()
-                }
-        }
-        
-    }
-    
-    
-    
-
-    }
-    
-    func getDeckWithCompletion(withDeckTitle title: String, completion: () -> ()) {
-        
-        //add throw statement?
-        guard let token =  RailsRequest.session().token else { return }
-        var info = RequestInfo()
-        info.endPoint = "/decks"
-        info.methodType = .GET
-        
-        
-        info.parameters = [
-            "acces-token": token,
-            "title" : title,
-        ]
+//    
+//    func register(withUserName username: String, andPassword password: String, andEmail email: String, completion: () -> () ) {
+//        var info = RequestInfo()
+//        info.endPoint = "/signup"
+//        info.methodType = .POST
+//        
+//        info.parameters = [
+//            "username": username,
+//            "password" : password,
+//            "email": email
+//        
+//        ]
+//        
+//       
+//        
+//        requestWithInfo(info) { (returnedInfo) -> () in
+//            print(returnedInfo)
+//            
+//            if let user = returnedInfo?["user"] as? [String: AnyObject] {
+//                
+//                if let key = user["access_token"] as? String {
+//                    
+//                    self.token = key
+//                    print(self.token)
+//                    completion()
+//                }
+//        }
+//        
+//    }
+//    
+//    
+//    
+//
+//    }
+//    
+//    func getDeckWithCompletion(withDeckTitle title: String, completion: () -> ()) {
+//        
+//        //add throw statement?
+//        guard let token =  RailsRequest.session().token else { return }
+//        var info = RequestInfo()
+//        info.endPoint = "/decks"
+//        info.methodType = .GET
+//        
+//        
+//        info.parameters = [
+//            "acces-token": token,
+//            "title" : title,
+//        ]
         
         
 //        "created_at" : "2015-11-06T14:15:26.152Z",
@@ -158,22 +159,22 @@ class RailsRequest: NSObject {
 //        "updated_at" : "2015-11-06T14:15:26.152Z",
 //        "user_id" : 5
         
-        
-        requestWithInfo(info) { (returnedInfo) -> () in
-          
-            print("returned info \(returnedInfo)")
-            
-            if let deck = returnedInfo?["deck"] as? [String: AnyObject] {
-                
-                print(deck)
-               
-                }
-                
-            }
-            completion()
-            
-    }
-
+//        
+//        requestWithInfo(info) { (returnedInfo) -> () in
+//          
+//            print("returned info \(returnedInfo)")
+//            
+//            if let deck = returnedInfo?["deck"] as? [String: AnyObject] {
+//                
+//                print(deck)
+//               
+//                }
+//                
+//            }
+//            completion()
+//            
+//    }
+//
 
     
 
@@ -238,6 +239,7 @@ class RailsRequest: NSObject {
         
         
         
+        }
     }
 }
 

@@ -20,19 +20,19 @@ class RegisterViewController: LoginViewController {
         
         guard let un = usernameTextField.text, let pw = passwordTextField.text, let em = emailTextField.text where un != "" && pw != "" && em != "" else { print("blank fields"); alertError(message: "Oops..", reason: "All fields are required.") ; return }
      
-        RailsRequest.session().register(withUserName: un, andPassword: pw, andEmail: em, completion: { () -> () in
-           
-           
-               
-                let mainsb = UIStoryboard(name: "Main", bundle: nil)
-               
-                if let tab = mainsb.instantiateInitialViewController() as? UITabBarController {
-                    self.navigationController?.pushViewController(tab, animated: true)
-                
-                
-               
-            }
-        })
+////        RailsRequest.session().register(withUserName: un, andPassword: pw, andEmail: em, completion: { () -> () in
+//        
+//           
+//               
+//                let mainsb = UIStoryboard(name: "Main", bundle: nil)
+//               
+//                if let tab = mainsb.instantiateInitialViewController() as? UITabBarController {
+//                    self.navigationController?.pushViewController(tab, animated: true)
+//                
+//                
+//               
+//            }
+//        })
     }
     
     override func textFieldShouldReturn(textField: UITextField) -> Bool {

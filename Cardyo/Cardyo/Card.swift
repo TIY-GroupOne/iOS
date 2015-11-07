@@ -35,15 +35,33 @@
 import Foundation
 import RealmSwift
 
+class User: Object {
+    dynamic var id: String = "123"
+    dynamic var name: String = ""
+    dynamic var token: String = ""
+}
+
 
 class Card: Object {
    
    dynamic var id: String = ""
    dynamic var term: String = ""
    dynamic var definition: String = ""
-    dynamic var deck: Deck = Deck()
+   dynamic var deck: Deck?
     
-   }
+}
+
+
+class Deck: Object {
+    dynamic var id: Int = 0
+    var cards = List<Card>()
+    dynamic var title: String = ""
+    dynamic var user: User?
+    
+}
+
+
+
 
 
 

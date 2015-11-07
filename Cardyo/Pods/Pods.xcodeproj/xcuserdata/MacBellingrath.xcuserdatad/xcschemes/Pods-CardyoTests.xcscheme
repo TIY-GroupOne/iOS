@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9D512D0016E2DCDA45995FFE'
-               BlueprintName = 'performSelector-swift'
+               BlueprintIdentifier = 'B6C4048A4E0925E96D32BC30'
+               BlueprintName = 'Pods-CardyoTests'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'performSelector_swift.framework'>
+               BuildableName = 'Pods_CardyoTests.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

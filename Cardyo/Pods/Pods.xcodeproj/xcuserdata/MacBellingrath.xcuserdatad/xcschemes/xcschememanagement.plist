@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>APIModel.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,12 +19,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>KeyboardWrapper.xcscheme</key>
+		<key>Pods-Cardyo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Cardyo.xcscheme</key>
+		<key>Pods-CardyoTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,22 +67,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2D52A6375A7CD057B2B86181905B53EA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>352499BD0B807053C4A2731BAEBB5014</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>37D3BD6BB7D5A7A17D8769304322FCE8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>407162044548C6C2D232BD867EEBF41D</key>
+		<key>2E5DB38BE4344BA873AFB730AEB7FE27</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,7 +82,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A58479986345DC752CCF276C8DFF6C5</key>
+		<key>4F5A796D02F9C6BC56C0CD9972BBBF59</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7868FBC71414DBB2503403785D67E592</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,12 +97,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B036C5DF4188E29982161A5C6D104335</key>
+		<key>AD77F6D27E6DE69FEFFCBDCFC3135E36</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B2F193902CA44893E6A3C6A85DB783B8</key>
+		<key>B8EB2E32E7686E49FD29016E265301DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2F4A07ACB0C5CACD2AA17A2E4F256F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -127,12 +117,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ED466AEC4253C4D6F5185CF66278E323</key>
+		<key>DD6EF7A4ABBDC0C74D51E3345C08871A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F199E0CB23237268DD458550DD5CF298</key>
+		<key>E169F2D86F89B5731D92E25BCA0CCCBA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

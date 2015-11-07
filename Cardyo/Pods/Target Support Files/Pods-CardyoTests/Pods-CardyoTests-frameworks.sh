@@ -84,26 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-Cardyo/AFNetworking.framework"
-  install_framework "Pods-Cardyo/Alamofire.framework"
-  install_framework "Pods-Cardyo/Cartography.framework"
-  install_framework "Pods-Cardyo/ReactiveUI.framework"
-  install_framework "Pods-Cardyo/Realm.framework"
-  install_framework "Pods-Cardyo/RealmSwift.framework"
-  install_framework "Pods-Cardyo/SwiftyJSON.framework"
-  install_framework "Pods-Cardyo/UIColor_FlatColors.framework"
-  install_framework "Pods-Cardyo/ZLSwipeableViewSwift.framework"
-  install_framework "Pods-Cardyo/performSelector_swift.framework"
+  install_framework "Pods-CardyoTests/AFNetworking.framework"
+  install_framework "Pods-CardyoTests/Alamofire.framework"
+  install_framework "Pods-CardyoTests/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-Cardyo/AFNetworking.framework"
-  install_framework "Pods-Cardyo/Alamofire.framework"
-  install_framework "Pods-Cardyo/Cartography.framework"
-  install_framework "Pods-Cardyo/ReactiveUI.framework"
-  install_framework "Pods-Cardyo/Realm.framework"
-  install_framework "Pods-Cardyo/RealmSwift.framework"
-  install_framework "Pods-Cardyo/SwiftyJSON.framework"
-  install_framework "Pods-Cardyo/UIColor_FlatColors.framework"
-  install_framework "Pods-Cardyo/ZLSwipeableViewSwift.framework"
-  install_framework "Pods-Cardyo/performSelector_swift.framework"
+  install_framework "Pods-CardyoTests/AFNetworking.framework"
+  install_framework "Pods-CardyoTests/Alamofire.framework"
+  install_framework "Pods-CardyoTests/SwiftyJSON.framework"
 fi

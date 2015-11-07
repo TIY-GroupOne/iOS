@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510E54741E32CE630684DFB1 /* Pods_CardyoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240C13535CF9E544E623E406 /* Pods_CardyoTests.framework */; };
 		BB6EF146906F3F58D02DF4C3 /* Pods_Cardyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8BC9B80A5947FCBAA8C92C /* Pods_Cardyo.framework */; };
+		E64BC89F1BEE4FFB008AF7D6 /* DeckCreationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BC89E1BEE4FFB008AF7D6 /* DeckCreationTableViewController.swift */; };
 		E6684CB11BEA9C7A008CA808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6684CB01BEA9C7A008CA808 /* AppDelegate.swift */; };
 		E6684CB31BEA9C7A008CA808 /* ZLSwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6684CB21BEA9C7A008CA808 /* ZLSwipeableViewController.swift */; };
 		E6684CB81BEA9C7A008CA808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6684CB61BEA9C7A008CA808 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		E6CEB58A1BED48D000E87FFC /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5891BED48D000E87FFC /* Deck.swift */; };
 		E6CEB58C1BED4AA200E87FFC /* Guesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB58B1BED4AA200E87FFC /* Guesses.swift */; };
 		E6CEB58E1BED5CC700E87FFC /* CardyoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB58D1BED5CC700E87FFC /* CardyoButton.swift */; };
+		E6CEB5B61BEE342200E87FFC /* DeckViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5B51BEE342200E87FFC /* DeckViewControllerTableViewController.swift */; };
+		E6CEB5B81BEE347D00E87FFC /* DeckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5B71BEE347D00E87FFC /* DeckTableViewCell.swift */; };
 		E6D6BCE21BEBACA90002862D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6BCE11BEBACA90002862D /* CardView.swift */; };
 		E6D6BCE51BEBAE600002862D /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6D6BCE41BEBAE600002862D /* Cards.storyboard */; };
 		E6D6BCEC1BEBC05A0002862D /* CardyoStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D6BCEB1BEBC05A0002862D /* CardyoStackView.xib */; };
@@ -53,9 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		240C13535CF9E544E623E406 /* Pods_CardyoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardyoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB6518E0B954A6FA3CCBFE6 /* Pods-Cardyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cardyo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cardyo/Pods-Cardyo.release.xcconfig"; sourceTree = "<group>"; };
 		3E627AB777963F984B341BD9 /* Pods-Cardyo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cardyo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cardyo/Pods-Cardyo.debug.xcconfig"; sourceTree = "<group>"; };
+		80FF1DFB87B378A34A03CFE7 /* Pods-CardyoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardyoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardyoTests/Pods-CardyoTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE8BC9B80A5947FCBAA8C92C /* Pods_Cardyo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cardyo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64BC89E1BEE4FFB008AF7D6 /* DeckCreationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckCreationTableViewController.swift; sourceTree = "<group>"; };
 		E6684CAD1BEA9C7A008CA808 /* Cardyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cardyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6684CB01BEA9C7A008CA808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6684CB21BEA9C7A008CA808 /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
@@ -82,11 +89,15 @@
 		E6CEB5891BED48D000E87FFC /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		E6CEB58B1BED4AA200E87FFC /* Guesses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guesses.swift; sourceTree = "<group>"; };
 		E6CEB58D1BED5CC700E87FFC /* CardyoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardyoButton.swift; sourceTree = "<group>"; };
+		E6CEB5B51BEE342200E87FFC /* DeckViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		E6CEB5B71BEE347D00E87FFC /* DeckTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckTableViewCell.swift; sourceTree = "<group>"; };
+		E6CEB5B91BEE359900E87FFC /* Cardyoplayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Cardyoplayground.playground; sourceTree = "<group>"; };
 		E6D6BCE11BEBACA90002862D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E6D6BCE41BEBAE600002862D /* Cards.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
 		E6D6BCEB1BEBC05A0002862D /* CardyoStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardyoStackView.xib; sourceTree = "<group>"; };
 		E6D6BCED1BEBD6190002862D /* RailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsRequest.swift; sourceTree = "<group>"; };
 		E6D6BCEF1BEBEF5A0002862D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FBCBAC0D226D9F8C348413E4 /* Pods-CardyoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardyoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardyoTests/Pods-CardyoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510E54741E32CE630684DFB1 /* Pods_CardyoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				AE8BC9B80A5947FCBAA8C92C /* Pods_Cardyo.framework */,
+				240C13535CF9E544E623E406 /* Pods_CardyoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,8 +141,19 @@
 			children = (
 				3E627AB777963F984B341BD9 /* Pods-Cardyo.debug.xcconfig */,
 				2FB6518E0B954A6FA3CCBFE6 /* Pods-Cardyo.release.xcconfig */,
+				FBCBAC0D226D9F8C348413E4 /* Pods-CardyoTests.debug.xcconfig */,
+				80FF1DFB87B378A34A03CFE7 /* Pods-CardyoTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E64BC89D1BEE4FD7008AF7D6 /* Deck Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E6CEB5B71BEE347D00E87FFC /* DeckTableViewCell.swift */,
+				E6CEB5B51BEE342200E87FFC /* DeckViewControllerTableViewController.swift */,
+			);
+			name = "Deck Flow";
 			sourceTree = "<group>";
 		};
 		E6684CA41BEA9C7A008CA808 = {
@@ -157,6 +181,7 @@
 		E6684CAF1BEA9C7A008CA808 /* Cardyo */ = {
 			isa = PBXGroup;
 			children = (
+				E6684CB61BEA9C7A008CA808 /* Main.storyboard */,
 				E6D6BCE71BEBAECB0002862D /* Main */,
 				E6684CE21BEAAE09008CA808 /* Login Flow */,
 				E6D6BCE81BEBAEDA0002862D /* Supporting Files */,
@@ -195,6 +220,25 @@
 			name = "Login Flow";
 			sourceTree = "<group>";
 		};
+		E6CEB5B31BEE33FA00E87FFC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E6D6BCED1BEBD6190002862D /* RailsRequest.swift */,
+				E6CEB5841BED1D7200E87FFC /* NetworkOperation.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		E6CEB5B41BEE340C00E87FFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6CEB58B1BED4AA200E87FFC /* Guesses.swift */,
+				E6CEB5871BED48C800E87FFC /* Card.swift */,
+				E6CEB5891BED48D000E87FFC /* Deck.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		E6D6BCE61BEBAE890002862D /* Flash Card Flow */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,13 +253,12 @@
 		E6D6BCE71BEBAECB0002862D /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				E6D6BCED1BEBD6190002862D /* RailsRequest.swift */,
-				E6CEB5841BED1D7200E87FFC /* NetworkOperation.swift */,
-				E6CEB58B1BED4AA200E87FFC /* Guesses.swift */,
-				E6CEB5871BED48C800E87FFC /* Card.swift */,
-				E6CEB5891BED48D000E87FFC /* Deck.swift */,
+				E6CEB5B31BEE33FA00E87FFC /* Networking */,
+				E6CEB5B41BEE340C00E87FFC /* Models */,
 				E6CEB5801BECFD8A00E87FFC /* CardyoTabBarController.swift */,
-				E6684CB61BEA9C7A008CA808 /* Main.storyboard */,
+				E64BC89E1BEE4FFB008AF7D6 /* DeckCreationTableViewController.swift */,
+				E64BC89D1BEE4FD7008AF7D6 /* Deck Flow */,
+				E6CEB5B91BEE359900E87FFC /* Cardyoplayground.playground */,
 				E6D6BCE61BEBAE890002862D /* Flash Card Flow */,
 			);
 			name = Main;
@@ -262,9 +305,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6684CDA1BEA9C7A008CA808 /* Build configuration list for PBXNativeTarget "CardyoTests" */;
 			buildPhases = (
+				225534FEB2B3E88496AE7524 /* Check Pods Manifest.lock */,
 				E6684CBF1BEA9C7A008CA808 /* Sources */,
 				E6684CC01BEA9C7A008CA808 /* Frameworks */,
 				E6684CC11BEA9C7A008CA808 /* Resources */,
+				336EE167457138D8EFF08F3E /* Embed Pods Frameworks */,
+				9BDEF5B61EE5A25043194DF5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -383,6 +429,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		225534FEB2B3E88496AE7524 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		336EE167457138D8EFF08F3E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardyoTests/Pods-CardyoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		371D38273B7B1DF539B87D50 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +472,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cardyo/Pods-Cardyo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BDEF5B61EE5A25043194DF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardyoTests/Pods-CardyoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C496B59F8BFA8BE11F3D1098 /* Copy Pods Resources */ = {
@@ -431,8 +522,11 @@
 				E6CEB58C1BED4AA200E87FFC /* Guesses.swift in Sources */,
 				E6694CD51BEB9ED60032D8D4 /* ChoiceViewController.swift in Sources */,
 				E6CEB5811BECFD8A00E87FFC /* CardyoTabBarController.swift in Sources */,
+				E6CEB5B61BEE342200E87FFC /* DeckViewControllerTableViewController.swift in Sources */,
 				E6CEB5881BED48C800E87FFC /* Card.swift in Sources */,
+				E6CEB5B81BEE347D00E87FFC /* DeckTableViewCell.swift in Sources */,
 				E6694CD71BEB9ED60032D8D4 /* AvatarViewController.swift in Sources */,
+				E64BC89F1BEE4FFB008AF7D6 /* DeckCreationTableViewController.swift in Sources */,
 				E6CEB5831BED005400E87FFC /* AppTheme.swift in Sources */,
 				E6CEB58A1BED48D000E87FFC /* Deck.swift in Sources */,
 				E6684CB31BEA9C7A008CA808 /* ZLSwipeableViewController.swift in Sources */,
@@ -598,6 +692,7 @@
 		};
 		E6684CDB1BEA9C7A008CA808 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBCBAC0D226D9F8C348413E4 /* Pods-CardyoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CardyoTests/Info.plist;
@@ -610,6 +705,7 @@
 		};
 		E6684CDC1BEA9C7A008CA808 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FF1DFB87B378A34A03CFE7 /* Pods-CardyoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CardyoTests/Info.plist;

@@ -12,13 +12,15 @@ pod 'ReactiveUI'
 pod 'AFNetworking', '~> 2.0'
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 pod 'Alamofire', '~> 3.0'
-pod 'KeyboardWrapper'
 pod 'RealmSwift'
-pod 'APIModel', '~> 0.10.0'
+
 
 end
 
 target 'CardyoTests' do
+    pod 'AFNetworking', '~> 2.0'
+    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    pod 'Alamofire', '~> 3.0'
 
 end
 
