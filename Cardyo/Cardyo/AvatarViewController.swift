@@ -29,7 +29,11 @@ class AvatarViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     @IBAction func logoutButtonPressed(sender: UIButton) {
         print("User logged out")
-        RailsRequest.session().token = nil
+      
+        //set token to nil
+        NetworkManager.token = nil
+        
+        //segue back to login/register vc
         
         let usersb = UIStoryboard(name: "User", bundle: nil )
         if let nav = usersb.instantiateInitialViewController() as? UINavigationController {
@@ -57,6 +61,6 @@ class AvatarViewController: UIViewController, UINavigationControllerDelegate, UI
         
 
         // Do any additional setup after loading the view.
-    }
+     }
 
    }

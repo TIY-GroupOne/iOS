@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Cartography.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -67,7 +77,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E5DB38BE4344BA873AFB730AEB7FE27</key>
+		<key>26BB50009AEE1E2B80FA853A85AB8CD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38C150E96E07A0213C50750D71ECD8C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +102,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7868FBC71414DBB2503403785D67E592</key>
+		<key>51B9C628B7B48E411E473241E35D205A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,17 +112,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AD77F6D27E6DE69FEFFCBDCFC3135E36</key>
+		<key>80B326CAAABF65F7FD249311A5C2DFC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8EB2E32E7686E49FD29016E265301DB</key>
+		<key>98DF854D6663DE8905FDD7CE266B17D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C2F4A07ACB0C5CACD2AA17A2E4F256F2</key>
+		<key>AF2F92CAD874BC047E0815E812D2FFEB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0FE4A5CD1C264E2D5E44B1E93D0A60C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,12 +137,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DD6EF7A4ABBDC0C74D51E3345C08871A</key>
+		<key>C5CBCAA97E951CC882334464FBDF983D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E169F2D86F89B5731D92E25BCA0CCCBA</key>
+		<key>FBD082A0D35F7917EAB9DD9D3CCA9976</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AFNetworking
+
 
 
 class LoginViewController: UIViewController, UITextFieldDelegate    {
@@ -33,34 +33,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate    {
         guard let userName = userNameTextField.text, let password = passwordTextfield.text else { return }
         
         let mainsb = UIStoryboard(name: "Main", bundle: nil)
-        
-        if let tab = mainsb.instantiateInitialViewController() as? UITabBarController {
-            self.navigationController?.pushViewController(tab, animated: true)
+            NetworkManager.sharedManager().login(userName, password: password) { (success) in
+                if success {
+                    if let tab = mainsb.instantiateInitialViewController() as? UITabBarController
+                    {
+                        self.navigationController?.pushViewController(tab, animated: true)
+                    } else  {
+                        self.alertError(message: "Log in failed.", reason: "Please try again.")
+                        
+                }
+            }
         }
-        
+    }
+
     
-//
-//        RailsRequest.session().loginWithUsername(userName, andPassword: password, success: { (success) in
-//            
-//            if success {
-//                print(success)
-//                guard RailsRequest.session().token != nil else { return self.alertError(message: "Sign In", reason: "Please sign in or register.") }
-//                
-//                
-//            
-//                let mainsb = UIStoryboard(name: "Main", bundle: nil)
-//                
-//                if let vc = mainsb.instantiateInitialViewController() {
-//                    
-//                    self.navigationController?.setViewControllers([vc], animated: true)
-//                    
-//                }
-//
-//            }
-//        })
-//        
-        
-        }
     
     //MARK: Textfield
     

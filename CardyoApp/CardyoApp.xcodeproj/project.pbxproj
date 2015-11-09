@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2095FC9A57FADFA8EF65C4C2 /* Pods_CardyoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB73033BC0F64D00F0A21AA5 /* Pods_CardyoApp.framework */; };
+		E66B1FBD1BEFF9780035AD3C /* DeckCreationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B1FBC1BEFF9780035AD3C /* DeckCreationTableViewCell.swift */; };
+		E66B1FC01BF004640035AD3C /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B1FBF1BF004640035AD3C /* NetworkOperation.swift */; };
+		E66B1FC71BF0088A0035AD3C /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66B1FC11BF0088A0035AD3C /* User.storyboard */; };
+		E66B1FC81BF0088A0035AD3C /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B1FC21BF0088A0035AD3C /* ChoiceViewController.swift */; };
+		E66B1FC91BF0088A0035AD3C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B1FC31BF0088A0035AD3C /* LoginViewController.swift */; };
+		E66B1FCA1BF0088A0035AD3C /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B1FC41BF0088A0035AD3C /* AvatarViewController.swift */; };
+		E66B1FCB1BF0088A0035AD3C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B1FC51BF0088A0035AD3C /* RegisterViewController.swift */; };
+		E66B1FCC1BF0088A0035AD3C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B1FC61BF0088A0035AD3C /* OnboardingViewController.swift */; };
+		E66B1FCF1BF008F90035AD3C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B1FCE1BF008F90035AD3C /* Extensions.swift */; };
+		E6BAFF771BF0E810000A3A48 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BAFF761BF0E810000A3A48 /* AppTheme.swift */; };
+		E6DD2B6D1BEFD1AE007CD678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD2B6C1BEFD1AE007CD678 /* AppDelegate.swift */; };
+		E6DD2B741BEFD1AE007CD678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DD2B721BEFD1AE007CD678 /* Main.storyboard */; };
+		E6DD2B761BEFD1AE007CD678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6DD2B751BEFD1AE007CD678 /* Assets.xcassets */; };
+		E6DD2B791BEFD1AE007CD678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DD2B771BEFD1AE007CD678 /* LaunchScreen.storyboard */; };
+		E6DD2B821BEFD212007CD678 /* DecksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD2B811BEFD212007CD678 /* DecksTableViewController.swift */; };
+		E6DD2B861BEFD3DF007CD678 /* CDOUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD2B851BEFD3DF007CD678 /* CDOUser.swift */; };
+		E6DD2B881BEFD500007CD678 /* CDOCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD2B871BEFD500007CD678 /* CDOCard.swift */; };
+		E6DD2B8A1BEFD54F007CD678 /* CDODeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD2B891BEFD54F007CD678 /* CDODeck.swift */; };
+		E6DD2B8C1BEFD5D8007CD678 /* CDOGuesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD2B8B1BEFD5D8007CD678 /* CDOGuesses.swift */; };
+		E6DD2B8F1BEFE199007CD678 /* DeckCreationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD2B8E1BEFE199007CD678 /* DeckCreationTableViewController.swift */; };
+		E6E596DC1BF0D9590066733F /* ZLSwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E596D81BF0D9590066733F /* ZLSwipeableViewController.swift */; };
+		E6E596DD1BF0D9590066733F /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E596D91BF0D9590066733F /* Game.storyboard */; };
+		E6E596DE1BF0D9590066733F /* CardyoStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E596DA1BF0D9590066733F /* CardyoStackView.xib */; };
+		E6E596DF1BF0D9590066733F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E596DB1BF0D9590066733F /* CardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		953C723F6C9FE136C77F941C /* Pods-CardyoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardyoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardyoApp/Pods-CardyoApp.release.xcconfig"; sourceTree = "<group>"; };
+		A46060D4F412636329D571A7 /* Pods-CardyoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardyoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardyoApp/Pods-CardyoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AB73033BC0F64D00F0A21AA5 /* Pods_CardyoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardyoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66B1FBC1BEFF9780035AD3C /* DeckCreationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckCreationTableViewCell.swift; sourceTree = "<group>"; };
+		E66B1FBF1BF004640035AD3C /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		E66B1FC11BF0088A0035AD3C /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		E66B1FC21BF0088A0035AD3C /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		E66B1FC31BF0088A0035AD3C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E66B1FC41BF0088A0035AD3C /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		E66B1FC51BF0088A0035AD3C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E66B1FC61BF0088A0035AD3C /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		E66B1FCE1BF008F90035AD3C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E6BAFF761BF0E810000A3A48 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		E6DD2B691BEFD1AE007CD678 /* CardyoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardyoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6DD2B6C1BEFD1AE007CD678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6DD2B731BEFD1AE007CD678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6DD2B751BEFD1AE007CD678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6DD2B781BEFD1AE007CD678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6DD2B7A1BEFD1AE007CD678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6DD2B811BEFD212007CD678 /* DecksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecksTableViewController.swift; sourceTree = "<group>"; };
+		E6DD2B851BEFD3DF007CD678 /* CDOUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDOUser.swift; sourceTree = "<group>"; };
+		E6DD2B871BEFD500007CD678 /* CDOCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDOCard.swift; sourceTree = "<group>"; };
+		E6DD2B891BEFD54F007CD678 /* CDODeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDODeck.swift; sourceTree = "<group>"; };
+		E6DD2B8B1BEFD5D8007CD678 /* CDOGuesses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDOGuesses.swift; sourceTree = "<group>"; };
+		E6DD2B8E1BEFE199007CD678 /* DeckCreationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckCreationTableViewController.swift; sourceTree = "<group>"; };
+		E6E596D81BF0D9590066733F /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
+		E6E596D91BF0D9590066733F /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		E6E596DA1BF0D9590066733F /* CardyoStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardyoStackView.xib; sourceTree = "<group>"; };
+		E6E596DB1BF0D9590066733F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6DD2B661BEFD1AE007CD678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2095FC9A57FADFA8EF65C4C2 /* Pods_CardyoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02C5F77E81F823A6645087A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A46060D4F412636329D571A7 /* Pods-CardyoApp.debug.xcconfig */,
+				953C723F6C9FE136C77F941C /* Pods-CardyoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB4EEA6754A8FA8EAE16A88B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB73033BC0F64D00F0A21AA5 /* Pods_CardyoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E66B1FBE1BEFFBA10035AD3C /* Deck Creation Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E6DD2B811BEFD212007CD678 /* DecksTableViewController.swift */,
+				E6DD2B8E1BEFE199007CD678 /* DeckCreationTableViewController.swift */,
+				E66B1FBC1BEFF9780035AD3C /* DeckCreationTableViewCell.swift */,
+			);
+			name = "Deck Creation Flow";
+			sourceTree = "<group>";
+		};
+		E66B1FCD1BF0088F0035AD3C /* Login Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E66B1FC11BF0088A0035AD3C /* User.storyboard */,
+				E66B1FC21BF0088A0035AD3C /* ChoiceViewController.swift */,
+				E66B1FC31BF0088A0035AD3C /* LoginViewController.swift */,
+				E66B1FC41BF0088A0035AD3C /* AvatarViewController.swift */,
+				E66B1FC51BF0088A0035AD3C /* RegisterViewController.swift */,
+				E66B1FC61BF0088A0035AD3C /* OnboardingViewController.swift */,
+			);
+			name = "Login Flow";
+			sourceTree = "<group>";
+		};
+		E6DD2B601BEFD1AE007CD678 = {
+			isa = PBXGroup;
+			children = (
+				E6DD2B6B1BEFD1AE007CD678 /* CardyoApp */,
+				E6DD2B6A1BEFD1AE007CD678 /* Products */,
+				02C5F77E81F823A6645087A2 /* Pods */,
+				BB4EEA6754A8FA8EAE16A88B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E6DD2B6A1BEFD1AE007CD678 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6DD2B691BEFD1AE007CD678 /* CardyoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6DD2B6B1BEFD1AE007CD678 /* CardyoApp */ = {
+			isa = PBXGroup;
+			children = (
+				E6DD2B721BEFD1AE007CD678 /* Main.storyboard */,
+				E66B1FCD1BF0088F0035AD3C /* Login Flow */,
+				E66B1FBE1BEFFBA10035AD3C /* Deck Creation Flow */,
+				E6DD2B8D1BEFD7A5007CD678 /* Model Objects */,
+				E6E596E01BF0D9BB0066733F /* Game Flow */,
+				E6DD2B801BEFD1EB007CD678 /* Supporting Files */,
+			);
+			path = CardyoApp;
+			sourceTree = "<group>";
+		};
+		E6DD2B801BEFD1EB007CD678 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6BAFF761BF0E810000A3A48 /* AppTheme.swift */,
+				E6DD2B6C1BEFD1AE007CD678 /* AppDelegate.swift */,
+				E66B1FBF1BF004640035AD3C /* NetworkOperation.swift */,
+				E66B1FCE1BF008F90035AD3C /* Extensions.swift */,
+				E6DD2B751BEFD1AE007CD678 /* Assets.xcassets */,
+				E6DD2B771BEFD1AE007CD678 /* LaunchScreen.storyboard */,
+				E6DD2B7A1BEFD1AE007CD678 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6DD2B8D1BEFD7A5007CD678 /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E6DD2B851BEFD3DF007CD678 /* CDOUser.swift */,
+				E6DD2B871BEFD500007CD678 /* CDOCard.swift */,
+				E6DD2B891BEFD54F007CD678 /* CDODeck.swift */,
+				E6DD2B8B1BEFD5D8007CD678 /* CDOGuesses.swift */,
+			);
+			name = "Model Objects";
+			sourceTree = "<group>";
+		};
+		E6E596E01BF0D9BB0066733F /* Game Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E6E596D81BF0D9590066733F /* ZLSwipeableViewController.swift */,
+				E6E596D91BF0D9590066733F /* Game.storyboard */,
+				E6E596DA1BF0D9590066733F /* CardyoStackView.xib */,
+				E6E596DB1BF0D9590066733F /* CardView.swift */,
+			);
+			name = "Game Flow";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6DD2B681BEFD1AE007CD678 /* CardyoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6DD2B7D1BEFD1AE007CD678 /* Build configuration list for PBXNativeTarget "CardyoApp" */;
+			buildPhases = (
+				99A7A0A8FBAFC803830D1D6F /* Check Pods Manifest.lock */,
+				E6DD2B651BEFD1AE007CD678 /* Sources */,
+				E6DD2B661BEFD1AE007CD678 /* Frameworks */,
+				E6DD2B671BEFD1AE007CD678 /* Resources */,
+				DEEDF8296D26DBCAF8367FB2 /* Embed Pods Frameworks */,
+				35134835C6FE9DC75605A4F7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardyoApp;
+			productName = CardyoApp;
+			productReference = E6DD2B691BEFD1AE007CD678 /* CardyoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6DD2B611BEFD1AE007CD678 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TeamOne;
+				TargetAttributes = {
+					E6DD2B681BEFD1AE007CD678 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = E6DD2B641BEFD1AE007CD678 /* Build configuration list for PBXProject "CardyoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6DD2B601BEFD1AE007CD678;
+			productRefGroup = E6DD2B6A1BEFD1AE007CD678 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6DD2B681BEFD1AE007CD678 /* CardyoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6DD2B671BEFD1AE007CD678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DD2B791BEFD1AE007CD678 /* LaunchScreen.storyboard in Resources */,
+				E6E596DE1BF0D9590066733F /* CardyoStackView.xib in Resources */,
+				E66B1FC71BF0088A0035AD3C /* User.storyboard in Resources */,
+				E6DD2B761BEFD1AE007CD678 /* Assets.xcassets in Resources */,
+				E6E596DD1BF0D9590066733F /* Game.storyboard in Resources */,
+				E6DD2B741BEFD1AE007CD678 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35134835C6FE9DC75605A4F7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardyoApp/Pods-CardyoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99A7A0A8FBAFC803830D1D6F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DEEDF8296D26DBCAF8367FB2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardyoApp/Pods-CardyoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6DD2B651BEFD1AE007CD678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DD2B881BEFD500007CD678 /* CDOCard.swift in Sources */,
+				E66B1FBD1BEFF9780035AD3C /* DeckCreationTableViewCell.swift in Sources */,
+				E6DD2B821BEFD212007CD678 /* DecksTableViewController.swift in Sources */,
+				E6BAFF771BF0E810000A3A48 /* AppTheme.swift in Sources */,
+				E6DD2B8F1BEFE199007CD678 /* DeckCreationTableViewController.swift in Sources */,
+				E6DD2B8C1BEFD5D8007CD678 /* CDOGuesses.swift in Sources */,
+				E6DD2B8A1BEFD54F007CD678 /* CDODeck.swift in Sources */,
+				E6DD2B861BEFD3DF007CD678 /* CDOUser.swift in Sources */,
+				E66B1FC81BF0088A0035AD3C /* ChoiceViewController.swift in Sources */,
+				E66B1FC01BF004640035AD3C /* NetworkOperation.swift in Sources */,
+				E6DD2B6D1BEFD1AE007CD678 /* AppDelegate.swift in Sources */,
+				E66B1FCF1BF008F90035AD3C /* Extensions.swift in Sources */,
+				E6E596DC1BF0D9590066733F /* ZLSwipeableViewController.swift in Sources */,
+				E66B1FCB1BF0088A0035AD3C /* RegisterViewController.swift in Sources */,
+				E66B1FCC1BF0088A0035AD3C /* OnboardingViewController.swift in Sources */,
+				E66B1FC91BF0088A0035AD3C /* LoginViewController.swift in Sources */,
+				E6E596DF1BF0D9590066733F /* CardView.swift in Sources */,
+				E66B1FCA1BF0088A0035AD3C /* AvatarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E6DD2B721BEFD1AE007CD678 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6DD2B731BEFD1AE007CD678 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6DD2B771BEFD1AE007CD678 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6DD2B781BEFD1AE007CD678 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6DD2B7B1BEFD1AE007CD678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6DD2B7C1BEFD1AE007CD678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6DD2B7E1BEFD1AE007CD678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A46060D4F412636329D571A7 /* Pods-CardyoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CardyoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.CardyoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E6DD2B7F1BEFD1AE007CD678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 953C723F6C9FE136C77F941C /* Pods-CardyoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CardyoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.CardyoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6DD2B641BEFD1AE007CD678 /* Build configuration list for PBXProject "CardyoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6DD2B7B1BEFD1AE007CD678 /* Debug */,
+				E6DD2B7C1BEFD1AE007CD678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6DD2B7D1BEFD1AE007CD678 /* Build configuration list for PBXNativeTarget "CardyoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6DD2B7E1BEFD1AE007CD678 /* Debug */,
+				E6DD2B7F1BEFD1AE007CD678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6DD2B611BEFD1AE007CD678 /* Project object */;
+}

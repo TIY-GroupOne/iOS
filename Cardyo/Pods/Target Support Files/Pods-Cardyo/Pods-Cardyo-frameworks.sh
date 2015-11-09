@@ -86,7 +86,9 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Cardyo/AFNetworking.framework"
   install_framework "Pods-Cardyo/Alamofire.framework"
+  install_framework "Pods-Cardyo/AlamofireObjectMapper.framework"
   install_framework "Pods-Cardyo/Cartography.framework"
+  install_framework "Pods-Cardyo/ObjectMapper.framework"
   install_framework "Pods-Cardyo/ReactiveUI.framework"
   install_framework "Pods-Cardyo/Realm.framework"
   install_framework "Pods-Cardyo/RealmSwift.framework"
@@ -98,7 +100,9 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Cardyo/AFNetworking.framework"
   install_framework "Pods-Cardyo/Alamofire.framework"
+  install_framework "Pods-Cardyo/AlamofireObjectMapper.framework"
   install_framework "Pods-Cardyo/Cartography.framework"
+  install_framework "Pods-Cardyo/ObjectMapper.framework"
   install_framework "Pods-Cardyo/ReactiveUI.framework"
   install_framework "Pods-Cardyo/Realm.framework"
   install_framework "Pods-Cardyo/RealmSwift.framework"

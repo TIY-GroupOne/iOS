@@ -16,36 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        var tbc: UITabBarController?
-        var nc: UINavigationController?
-        
-        //Check for token.
-        let token = RailsRequest.session().token
-       
-        //If token found, open main sb
-        if token != nil {
-            let mainstoryboard = UIStoryboard(name: "Main", bundle: nil)
-            if let initial = mainstoryboard.instantiateInitialViewController() as? UITabBarController{
-                tbc = initial
-            }
-            
-            //else if no token, open login flow
-        } else if token == nil {
-            let userSB = UIStoryboard(name: "User", bundle: nil)
-            if let initial = userSB.instantiateInitialViewController() as? UINavigationController {
-                nc = initial
-            print("No Token")
-            }
-        }
-        
-        window?.backgroundColor = AppTheme.sharedTheme().themeColor
-        
-        window?.rootViewController = tbc != nil ? tbc : nc
-        window?.makeKeyAndVisible()
-
-        return true
+    return true
     }
 
     func applicationWillResignActive(application: UIApplication) {

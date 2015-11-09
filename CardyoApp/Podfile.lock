@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (3.1.2)
+  - Cartography (0.6.0)
+  - DGElasticPullToRefresh (1.0.3)
+  - Gloss (0.6.0)
+  - performSelector-swift (0.1.0)
+  - ReactiveUI (0.0.2)
+  - UIColor+FlatColors (0.0.2)
+  - ZLSwipeableViewSwift (0.0.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - Cartography
+  - DGElasticPullToRefresh
+  - Gloss
+  - performSelector-swift
+  - ReactiveUI
+  - UIColor+FlatColors
+  - ZLSwipeableViewSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
+  DGElasticPullToRefresh: 040f39ae69840b3261d163fe6735c5901bf851e9
+  Gloss: 59f0b10942c523791cfbbfa882052fd9e87fe94a
+  performSelector-swift: 676d3dab420ed7e1505a7cdaf35e5741509cdd3c
+  ReactiveUI: 597b21e143dfc5fe438afc1b7a73c5c7e256175b
+  UIColor+FlatColors: 6c699df7a575281794c688c64cee6c44fd1f93b4
+  ZLSwipeableViewSwift: 3bd1ea9cdc4df9d0f024be32a00d3cfc66f57780
+
+COCOAPODS: 0.39.0

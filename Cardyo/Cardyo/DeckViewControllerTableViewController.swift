@@ -8,34 +8,48 @@
 
 import UIKit
 import RealmSwift
+import Alamofire
 
 
-class DeckViewControllerTableViewController: UITableViewController {
+
+
+class DecksTableViewController: UITableViewController {
     
     var decks = try? Realm().objects(Deck)
+
     
     @IBAction func addDeckButtonPressed(sender: AnyObject) {
-        
-        let deck = Deck()
-        deck.title = "Ancient Greece"
-        deck.id = 1
-
-        
-        // Get the default Realm
-        let realm = try! Realm()
-        // You only need to do this once (per thread)
-        
-        // Add to the Realm inside a transaction
-        try! realm.write {
-            realm.add(deck)
+        let token: String = "16dbf0279998c0fb0a5c360b3d5e51a1"
+        let base = "https://cardyo.herokuapp.com"
+        let headers = ["access_token":token]
+        let deckURL = base + "/decks"
+        let deckparams = ["title":"World"]
+       
+        Alamofire.request(.POST, deckURL, parameters: deckparams , encoding: .JSON, headers: headers).responseJSON(options: .MutableContainers) { (response) -> Void in
+            switch response.result {
+            case .Failure(let error) : print(error)
+            case .Success(let value):
+                print(value)
+                if let deck = value["deck"] as? [String: AnyObject] {
+                    let realm =  try! Realm()
+                    
+                    try! realm.write({ () -> Void in
+                        realm.create(Deck.self, value: deck, update: true)
+                        self.tableView.reloadData()
+                    })
+                }
+            }
         }
-        tableView.reloadData()
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-  
          self.navigationItem.leftBarButtonItem = self.editButtonItem()
+////        let users = try! Realm().objects(User).filter{ $0.accessToken == NSUserDefaults.standardUserDefaults().objectForKey("token") as? String }
+//        print(users)
+//        title = users.first?.username
+//        
+        
+       
     }
 
     override func didReceiveMemoryWarning() {

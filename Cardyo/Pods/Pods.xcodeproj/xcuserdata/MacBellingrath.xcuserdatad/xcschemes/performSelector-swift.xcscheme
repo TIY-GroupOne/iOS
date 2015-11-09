@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9D512D0016E2DCDA45995FFE'
+               BlueprintIdentifier = '51B93B703225E1A035003635'
                BlueprintName = 'performSelector-swift'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'performSelector_swift.framework'>

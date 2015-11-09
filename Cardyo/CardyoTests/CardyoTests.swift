@@ -39,55 +39,57 @@ import XCTest
 
 class CardyoTests: XCTestCase {
     
-    func testSignup(){
-        
-    }
+//    func testCreateDeck() {
+//        
+//        NetworkManager.sharedManager().createDeck("Hello There")
+//        
+//    }
+//    
     
-       
   
     
-    func testRailsRegistration() {
-        
-        self.measureBlock { () -> Void in
-            
-        
-        
-        let expect = self.expectationWithDescription("expect registration response")
-        
-        RailsRequest.session().register(withUserName: "Crufty", andPassword: "secrets", andEmail: "crufty@icloud.com") { (success) -> () in
-//            XCTAssertTrue(success)
-            XCTAssertNotNil(RailsRequest.session().token, "token is nil")
-            expect.fulfill()
-            
-        }
-        self.waitForExpectationsWithTimeout(20) { (error) -> Void in
-            print(error)
-        }
+//    func testRailsRegistration() {
+//        
+//        self.measureBlock { () -> Void in
+//        
+//        let expect = self.expectationWithDescription("expect registration response")
+//            
+//            
+//        
+//        RailsRequest.session().register(withUserName: "Crufty", andPassword: "secrets", andEmail: "crufty@icloud.com") { (success) -> () in
+////            XCTAssertTrue(success)
+//            XCTAssertNotNil(RailsRequest.session().token, "token is nil")
+//            expect.fulfill()
+//            
+//        }
+//        self.waitForExpectationsWithTimeout(20) { (error) -> Void in
+//            print(error)
+//        }
+//    
+//        
+//        
+//        }
+//        
+//    }
     
-        
-        
-        }
-        
-    }
     
-    
-    func testCreateDeck() {
-        
-        self.measureBlock { () -> Void in
-       
-            let expectation = self.expectationWithDescription("Expect deck is created")
-            
-            RailsRequest.session().getDeckWithCompletion(withDeckTitle: "Test", completion: { () -> () in
-                
-                expectation.fulfill()
-                
-            })
-            self.waitForExpectationsWithTimeout(10, handler: { (error) -> Void in
-                print(error)
-            })
-            
-            
-        }
+//    func testCreateDeck() {
+//        
+//        self.measureBlock { () -> Void in
+//       
+//            let expectation = self.expectationWithDescription("Expect deck is created")
+//            
+//            RailsRequest.session().getDeckWithCompletion(withDeckTitle: "Test", completion: { () -> () in
+//                
+//                expectation.fulfill()
+//                
+//            })
+//            self.waitForExpectationsWithTimeout(10, handler: { (error) -> Void in
+//                print(error)
+//            })
+//            
+//            
+//        }
     }
     
 //    func testRailsLogIn() {
@@ -98,4 +100,4 @@ class CardyoTests: XCTestCase {
 //        XCTAssertNotNil(token, "token is nil")
 //    }
     
-}
+//}

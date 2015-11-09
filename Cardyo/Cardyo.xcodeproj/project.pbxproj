@@ -26,7 +26,7 @@
 		E6CEB5811BECFD8A00E87FFC /* CardyoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5801BECFD8A00E87FFC /* CardyoTabBarController.swift */; };
 		E6CEB5831BED005400E87FFC /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5821BED005400E87FFC /* AppTheme.swift */; };
 		E6CEB5851BED1D7200E87FFC /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5841BED1D7200E87FFC /* NetworkOperation.swift */; };
-		E6CEB5881BED48C800E87FFC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5871BED48C800E87FFC /* Card.swift */; };
+		E6CEB5881BED48C800E87FFC /* ModelObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5871BED48C800E87FFC /* ModelObjects.swift */; };
 		E6CEB58A1BED48D000E87FFC /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB5891BED48D000E87FFC /* Deck.swift */; };
 		E6CEB58C1BED4AA200E87FFC /* Guesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB58B1BED4AA200E87FFC /* Guesses.swift */; };
 		E6CEB58E1BED5CC700E87FFC /* CardyoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEB58D1BED5CC700E87FFC /* CardyoButton.swift */; };
@@ -37,6 +37,7 @@
 		E6D6BCEC1BEBC05A0002862D /* CardyoStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D6BCEB1BEBC05A0002862D /* CardyoStackView.xib */; };
 		E6D6BCEE1BEBD6190002862D /* RailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6BCED1BEBD6190002862D /* RailsRequest.swift */; };
 		E6D6BCF01BEBEF5A0002862D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D6BCEF1BEBEF5A0002862D /* Extensions.swift */; };
+		E6DD2B5F1BEFA5B7007CD678 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD2B5E1BEFA5B7007CD678 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +86,7 @@
 		E6CEB5801BECFD8A00E87FFC /* CardyoTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardyoTabBarController.swift; sourceTree = "<group>"; };
 		E6CEB5821BED005400E87FFC /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		E6CEB5841BED1D7200E87FFC /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
-		E6CEB5871BED48C800E87FFC /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E6CEB5871BED48C800E87FFC /* ModelObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelObjects.swift; sourceTree = "<group>"; };
 		E6CEB5891BED48D000E87FFC /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		E6CEB58B1BED4AA200E87FFC /* Guesses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guesses.swift; sourceTree = "<group>"; };
 		E6CEB58D1BED5CC700E87FFC /* CardyoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardyoButton.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		E6D6BCEB1BEBC05A0002862D /* CardyoStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardyoStackView.xib; sourceTree = "<group>"; };
 		E6D6BCED1BEBD6190002862D /* RailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsRequest.swift; sourceTree = "<group>"; };
 		E6D6BCEF1BEBEF5A0002862D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E6DD2B5E1BEFA5B7007CD678 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FBCBAC0D226D9F8C348413E4 /* Pods-CardyoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardyoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardyoTests/Pods-CardyoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,8 +152,8 @@
 		E64BC89D1BEE4FD7008AF7D6 /* Deck Flow */ = {
 			isa = PBXGroup;
 			children = (
-				E6CEB5B71BEE347D00E87FFC /* DeckTableViewCell.swift */,
 				E6CEB5B51BEE342200E87FFC /* DeckViewControllerTableViewController.swift */,
+				E6CEB5B71BEE347D00E87FFC /* DeckTableViewCell.swift */,
 			);
 			name = "Deck Flow";
 			sourceTree = "<group>";
@@ -223,7 +225,6 @@
 		E6CEB5B31BEE33FA00E87FFC /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				E6D6BCED1BEBD6190002862D /* RailsRequest.swift */,
 				E6CEB5841BED1D7200E87FFC /* NetworkOperation.swift */,
 			);
 			name = Networking;
@@ -232,9 +233,10 @@
 		E6CEB5B41BEE340C00E87FFC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E6CEB58B1BED4AA200E87FFC /* Guesses.swift */,
-				E6CEB5871BED48C800E87FFC /* Card.swift */,
+				E6CEB5871BED48C800E87FFC /* ModelObjects.swift */,
+				E6DD2B5E1BEFA5B7007CD678 /* User.swift */,
 				E6CEB5891BED48D000E87FFC /* Deck.swift */,
+				E6CEB58B1BED4AA200E87FFC /* Guesses.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -267,9 +269,10 @@
 		E6D6BCE81BEBAEDA0002862D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E6D6BCED1BEBD6190002862D /* RailsRequest.swift */,
+				E6684CB01BEA9C7A008CA808 /* AppDelegate.swift */,
 				E6D6BCEF1BEBEF5A0002862D /* Extensions.swift */,
 				E6CEB5821BED005400E87FFC /* AppTheme.swift */,
-				E6684CB01BEA9C7A008CA808 /* AppDelegate.swift */,
 				E6684CB91BEA9C7A008CA808 /* Assets.xcassets */,
 				E6684CBB1BEA9C7A008CA808 /* LaunchScreen.storyboard */,
 				E6684CBE1BEA9C7A008CA808 /* Info.plist */,
@@ -523,7 +526,7 @@
 				E6694CD51BEB9ED60032D8D4 /* ChoiceViewController.swift in Sources */,
 				E6CEB5811BECFD8A00E87FFC /* CardyoTabBarController.swift in Sources */,
 				E6CEB5B61BEE342200E87FFC /* DeckViewControllerTableViewController.swift in Sources */,
-				E6CEB5881BED48C800E87FFC /* Card.swift in Sources */,
+				E6CEB5881BED48C800E87FFC /* ModelObjects.swift in Sources */,
 				E6CEB5B81BEE347D00E87FFC /* DeckTableViewCell.swift in Sources */,
 				E6694CD71BEB9ED60032D8D4 /* AvatarViewController.swift in Sources */,
 				E64BC89F1BEE4FFB008AF7D6 /* DeckCreationTableViewController.swift in Sources */,
@@ -531,6 +534,7 @@
 				E6CEB58A1BED48D000E87FFC /* Deck.swift in Sources */,
 				E6684CB31BEA9C7A008CA808 /* ZLSwipeableViewController.swift in Sources */,
 				E6694CCE1BEB9ADE0032D8D4 /* OnboardingViewController.swift in Sources */,
+				E6DD2B5F1BEFA5B7007CD678 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

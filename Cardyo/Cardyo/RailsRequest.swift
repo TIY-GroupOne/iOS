@@ -35,7 +35,7 @@ class RailsRequest: NSObject {
     
     private let base = "https://cardyo.herokuapp.com"
     
-    func loginWithUsername(username: String, andPassword password: String, completion: (json: JSON?, error: RequestError?) -> ()) {
+    func loginWithUsername(username: String, andPassword password: String) {
         
         var info = RequestInfo()
         info.endPoint = "/login"
@@ -60,7 +60,7 @@ class RailsRequest: NSObject {
             guard response.result.error == nil else {
                 print(response.result.error!)
                 
-                completion(json: nil, error: .BadData)
+//                completion(json: nil, error: .BadData)
                 
                 return
             }
@@ -69,7 +69,7 @@ class RailsRequest: NSObject {
             let json = JSON(value)
                 
                 print(json)
-                completion(json: json, error: nil)
+//                completion(json: json, error: nil)
             
 //                // handle the results as JSON, without a bunch of nested if loops
 //                let user = JSON(value)
@@ -243,26 +243,6 @@ class RailsRequest: NSObject {
     }
 }
 
-
-
-
-
-
-struct RequestInfo {
-    
-    enum MethodType: String {
-    case POST, GET, DELETE
-    }
-    
-    private let base = "https://cardyo.herokuapp.com"
-    var endPoint: String!
-    var methodType: MethodType = .GET
-    var parameters: [String:AnyObject] = [:]
-    var url: String {
-        return base + self.endPoint
-    }
-    var headers: [String : String]?
-}
 
 
 

@@ -113,7 +113,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FnF-hm-yuL">
                                 <rect key="frame" x="40" y="200" width="520" height="136"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUV-kK-2GX">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUV-kK-2GX">
                                         <rect key="frame" x="0.0" y="0.0" width="520" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="0.14218222128378377" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -131,7 +131,7 @@
                                             <outlet property="delegate" destination="qvZ-Az-Kap" id="RyR-k4-hZl"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="21p-NJ-BEf">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="21p-NJ-BEf">
                                         <rect key="frame" x="0.0" y="51" width="520" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="0.13925253378378377" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -149,7 +149,7 @@
                                             <outlet property="delegate" destination="qvZ-Az-Kap" id="igR-LY-tbC"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-6V-XxM">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-6V-XxM">
                                         <rect key="frame" x="0.0" y="101" width="520" height="36"/>
                                         <color key="backgroundColor" red="0.12156862745098039" green="0.90588235294117647" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>

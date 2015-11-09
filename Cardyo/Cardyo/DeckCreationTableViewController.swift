@@ -13,12 +13,7 @@ class DeckCreationTableViewController: UITableViewController {
     
     
     var cards = try! Realm().objects(Card)
-    
-    var cardsArray = [Card]() {
-        didSet {
-            tableView.reloadData()
-        }
-    }
+
     
     @IBOutlet weak var titleLabel: UITextField!
 
@@ -34,12 +29,15 @@ class DeckCreationTableViewController: UITableViewController {
         }
         ac.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
             guard let term = ac.textFields?.first?.text, let def = ac.textFields?.last?.text else { return }
+            
             let card = Card()
             card.term = term
             card.definition = def
             
-            self.cardsArray.append(card)
-        
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
+            
+            
       
  
         }))
@@ -92,7 +90,7 @@ class DeckCreationTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
 //        guard let c = cards else { return 0 }
-        return cardsArray.count
+        return cards.count
     }
     
     
@@ -103,7 +101,7 @@ class DeckCreationTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
         
-        let card = cardsArray[indexPath.row]
+        let card = cards[indexPath.row]
         
         cell.textLabel?.text = card.term
         cell.detailTextLabel?.text = card.definition
